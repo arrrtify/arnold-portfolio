@@ -1851,3 +1851,51 @@ button {
 /* =========================================
    CONTACT
 ========
+/* =========================
+   SOCIAL ICONS
+   ========================= */
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.social-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: inherit;
+    text-decoration: none;
+
+    border: 1px solid rgba(128, 128, 128, 0.35);
+
+    background: rgba(128, 128, 128, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.social-icon svg {
+    width: 22px;
+    height: 22px;
+
+    fill: currentColor;
+}
+
+.social-icon:hover {
+    transform: translateY(-4px) scale(1.05);
+
+    background: rgba(128, 128, 128, 0.18);
+
+    border-color: currentColor;
+}
